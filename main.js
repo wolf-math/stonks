@@ -1,12 +1,15 @@
 // import key from './api.js';
 
-
 let results = document.getElementById("results");
 let button = document.getElementById("button");
 
+const setLoading = () => {
+
+}
+
 button.onclick = () => {
-    // let loading = document.getElementById("loading");
-    // loading.style.display = "block";
+    let loading = document.getElementById("loading");
+    loading.style.display = "block";
     let searchText = document.getElementById("bar").value;
     const url = `https://financialmodelingprep.com/api/v3/search?query=${searchText}&limit=10&exchange=NASDAQ&apikey=${key}`;
     fetch(url)
@@ -25,5 +28,5 @@ button.onclick = () => {
         })
         document.getElementById("data").innerHTML = row;
     })
-    // .then(loading.style.display = "none")
+    .then(() => loading.style.display = "none")
 }
