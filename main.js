@@ -16,7 +16,7 @@ button.onclick = () => {
     .then(res => res.json())
     .then(data => {
         let row = '';
-        data.forEach((i) => {
+        data.map((i) => {
             row += `<tr>
                         <td>
                             <a href=https://financialmodelingprep.com/financial-summary/${i.symbol}>
