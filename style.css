@@ -7,10 +7,30 @@ html {
   }
 
 form {
-    width: 500px;
+    width: 350px;
     margin: 0 auto;
 }
 
-.results {
+#loading {
+    padding-top: 50px;
+    width: 50px;
+    margin: 0 auto;
+    color: white;
+    display: none;
+    /* display: show; */
+}
+
+#results {
     background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 35px;   
+}
+
+th, td {
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: grey;
 }
