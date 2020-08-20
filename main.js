@@ -1,6 +1,3 @@
-// import key from './api';
-// key = "c318fdef2ebf03d17db2bcce3d58c61c";
-
 let results = document.getElementById("results");
 let button = document.getElementById("button");
 
