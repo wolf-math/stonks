@@ -1,17 +1,14 @@
-// import key from './api.js';
+// import key from './api';
+// key = "c318fdef2ebf03d17db2bcce3d58c61c";
 
 let results = document.getElementById("results");
 let button = document.getElementById("button");
-
-const setLoading = () => {
-
-}
 
 button.onclick = () => {
     let loading = document.getElementById("loading");
     loading.style.display = "block";
     let searchText = document.getElementById("bar").value;
-    const url = `https://financialmodelingprep.com/api/v3/search?query=${searchText}&limit=10&exchange=NASDAQ&apikey=${key}`;
+    const url = `https://financialmodelingprep.com/api/v3/search?query=${searchText}&limit=10&exchange=NASDAQ&apikey=${window.key}`;
     fetch(url)
     .then(res => res.json())
     .then(data => {
